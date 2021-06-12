@@ -57,8 +57,7 @@ function damage = fatdamage(history, detail, NameValueArgs)
     gammaMf = NameValueArgs.FatigueStrengthFactor;
     reps = NameValueArgs.Repetitions;
     
-    counts = raincount(history);   % rainflow counting
-    extrema = getextrema(history); % reversals (for plot only)
+    [counts, extrema] = raincount(history); % rainflow counting
     
     Ni = fatcurve(counts(:, 2) * gammaFf, detail / gammaMf,...
         'StressType', NameValueArgs.StressType,...
