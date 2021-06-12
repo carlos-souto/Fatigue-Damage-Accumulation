@@ -33,6 +33,8 @@ damage = fatdamage(history, 160, 'NumberOfBins', [10, 20], 'NumberOfColors', 8)
 
 ### Example Output
 
+#### After execution, the following plots are shown, summarizing the fatigue analysis.
+
 A plot of the provided stress-time history:
 ![image](https://user-images.githubusercontent.com/83190503/121784062-a69ab380-cba9-11eb-9f47-01c8bfc22f53.png)
 
@@ -47,3 +49,9 @@ The generated fatigue strength curve:
 
 The linearly accumulated fatigue damage, failure is expected to occur if damage equals (or is greater than) 1. If damage is less than 1, the bar is shown in green, otherwise it is shown in red:
 ![image](https://user-images.githubusercontent.com/83190503/121784204-93d4ae80-cbaa-11eb-8ad1-1e7f019b1473.png)
+
+### The Rainflow Counting Algorithm
+
+The rainflow counting algorithm was implemented based on ASTM E1049-85 and its implementation was tested and validated by comparing its results with the ones obtained from Matlab’s ``rainflow`` function (from Signal Processing Toolbox). This implementation shows the same results while surpassing the efficiency of the Matlab’s solution.
+
+![b](https://user-images.githubusercontent.com/83190503/121784425-d2b73400-cbab-11eb-837f-22d1439ece6c.png)
