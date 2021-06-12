@@ -77,14 +77,16 @@ function damage = fatdamage(history, detail, NameValueArgs)
     
     % Stress-Time History
     subplot(3, 2, 1); hold on; grid on;
-    title(sprintf('(A) Stress-Time History (x%.1f)', NameValueArgs.Repetitions));
+    title('(A) Stress-Time History');
+    subtitle(sprintf('Number of Repetitions: %.1f', NameValueArgs.Repetitions));
     xlabel('Samples [Index]');
     ylabel('Stress Range [MPa]');
     plot(history, '-k');
     
     % Reversals
     subplot(3, 2, 3); hold on; grid on;
-    title(sprintf('(B) Reversals (x%.1f)', NameValueArgs.Repetitions));
+    title('(B) Reversals');
+    subtitle(sprintf('Number of Repetitions: %.1f', NameValueArgs.Repetitions));
     xlabel('Samples [Index]');
     ylabel('Stress Range [MPa]');
     plot(extrema, '-b');
