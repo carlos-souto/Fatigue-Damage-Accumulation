@@ -10,6 +10,7 @@
 %         column 1 are the counts                                              %
 %         column 2 are the ranges                                              %
 %         column 3 are the mean values                                         %
+% extrema: the obtained sequence of peaks and valleys (local extrema)          %
 % ---------------------------------------------------------------------------- %
 % Copyright (c) 2021, Carlos Daniel Santos Souto.                              %
 % All rights reserved.                                                         %
@@ -17,7 +18,7 @@
 % Contact: csouto@fe.up.pt                                                     %
 % ---------------------------------------------------------------------------- %
 
-function counts = raincount(history)
+function [counts, extrema] = raincount(history)
     
     arguments
         history (:, 1) double
