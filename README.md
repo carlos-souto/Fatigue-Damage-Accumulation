@@ -6,7 +6,7 @@ The design fatigue strength curve (S-N or stress-life curve) is specified using 
 
 ### Usage Examples
 
-```
+```matlab
 % reset workspace
 clear all; close all; clc;
 
