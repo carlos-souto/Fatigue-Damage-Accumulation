@@ -1,7 +1,7 @@
 # Fatigue-Damage-Accumulation
 ### By Carlos Daniel Santos Souto (csouto@fe.up.pt)
 
-Fatigue damage accumulation for variable amplitude stress-time histories using the Palmgren-Miner rule coded in Matlab. Code is well documented and easy to use.
+Fatigue damage accumulation for variable amplitude stress-time histories using the Palmgren-Miner rule coded in Matlab. Code is documented and easy to use.
 The design fatigue strength curve (S-N or stress-life curve) is specified using the standardized parameters from Eurocode 3 EN 1993-1-9. The cycle counts are done using a rainflow counting algorithm based on ASTM E1049-85.
 
 ### Usage Examples
