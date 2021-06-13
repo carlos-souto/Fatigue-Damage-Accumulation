@@ -40,7 +40,7 @@ damage = fatdamage(history, 160, 'Plot', false)
 
 ### Example Output
 
-#### After execution, the following plots are shown, summarizing the fatigue analysis.
+#### After execution, the following plots are shown, summarizing the fatigue analysis
 
 A plot of the provided stress-time history:
 
