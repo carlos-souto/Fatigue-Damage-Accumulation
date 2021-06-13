@@ -82,14 +82,14 @@ function damage = fatdamage(history, detail, NameValueArgs)
         subplot(3, 2, 1); hold on; grid on;
         title_('(A) Stress-Time History', ['Number of Repetitions: ', num2str(reps)]);
         xlabel('Sample [Index]');
-        ylabel('Stress Range [MPa]');
+        ylabel('Stress [MPa]');
         plot(history, 'r');
         
         % (B) Reversals
         subplot(3, 2, 3); hold on; grid on;
         title_('(B) Reversals', ['Number of Repetitions: ', num2str(reps)]);
         xlabel('Sample [Index]');
-        ylabel('Stress Range [MPa]');
+        ylabel('Stress [MPa]');
         plot(ex, ey, '-b');
         
         % (C) Rainflow Histogram
@@ -133,14 +133,14 @@ function damage = fatdamage(history, detail, NameValueArgs)
             'SecondSlope', NameValueArgs.SecondSlope, ...
             'ShearSlope', NameValueArgs.ShearSlope);
         plot_n(plot_n == +Inf) = 1e12; % force plot horizontal line
-        scatter_s = ey;
+        scatter_s = counts(:, 2);
         scatter_n = fatcurve(scatter_s, detail, ...
             'StressType', NameValueArgs.StressType, ...
             'FirstSlope', NameValueArgs.FirstSlope, ...
             'SecondSlope', NameValueArgs.SecondSlope, ...
             'ShearSlope', NameValueArgs.ShearSlope);
         plot(plot_n, plot_s, 'Color', [0 .5 0], 'DisplayName', 'Design S-N Curve');
-        scatter(scatter_n, scatter_s, '.', 'MarkerEdgeColor', [0 .5 0], 'DisplayName', 'Reversals');
+        scatter(scatter_n, scatter_s, '.', 'MarkerEdgeColor', [0 .5 0], 'DisplayName', 'Counted Stress Ranges');
         
         % (E) Palmgren-Miner Rule
         subplot(3, 2, 6); hold on; grid on; legend show;
