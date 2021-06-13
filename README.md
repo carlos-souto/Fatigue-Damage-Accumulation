@@ -44,23 +44,23 @@ damage = fatdamage(history, 160, 'Plot', false)
 
 A plot of the provided stress-time history:
 
-![a](https://user-images.githubusercontent.com/83190503/121819217-c43c4b80-cc83-11eb-8f49-37bc0bad5bc9.png)
+![a](https://user-images.githubusercontent.com/83190503/121822523-6fa2cb80-cc97-11eb-92e5-df355f8a8f82.png)
 
 A plot of the load reversals (local extrema, i.e., peaks and valleys):
 
-![b](https://user-images.githubusercontent.com/83190503/121819220-c7cfd280-cc83-11eb-8b72-b8d52ea91299.png)
+![b](https://user-images.githubusercontent.com/83190503/121822525-73365280-cc97-11eb-8c0f-63d6c3ccb434.png)
 
 The 2D rainflow histogram, where one can see the cycle counts joined in "buckets" of similar stress ranges and mean stresses:
 
-![c](https://user-images.githubusercontent.com/83190503/121819221-ca322c80-cc83-11eb-8341-1d57c09f4420.png)
+![c](https://user-images.githubusercontent.com/83190503/121822527-7598ac80-cc97-11eb-8f58-a5fe5ae0e854.png)
 
 The generated fatigue strength curve:
 
-![d](https://user-images.githubusercontent.com/83190503/121819226-cd2d1d00-cc83-11eb-870d-6db01bcce8d8.png)
+![d](https://user-images.githubusercontent.com/83190503/121822530-77fb0680-cc97-11eb-814f-01e71ac7b56b.png)
 
 The linearly accumulated fatigue damage, failure is expected to occur if damage equals (or is greater than) 1. If damage is less than 1, the bar is shown in green, otherwise it is shown in red:
 
-![e](https://user-images.githubusercontent.com/83190503/121819227-cf8f7700-cc83-11eb-871f-f45cd80a5af4.png)
+![e](https://user-images.githubusercontent.com/83190503/121822534-7a5d6080-cc97-11eb-8122-d5faa6e3cf76.png)
 
 ### The Rainflow Counting Algorithm
 
