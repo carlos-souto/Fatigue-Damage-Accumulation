@@ -66,4 +66,5 @@ The linearly accumulated fatigue damage, failure is expected to occur if damage 
 
 The rainflow counting algorithm was implemented based on ASTM E1049-85 and its implementation was tested and validated by comparing its results with the ones obtained from Matlab’s ``rainflow`` function (from Signal Processing Toolbox). This implementation shows the same results while surpassing the efficiency of the Matlab’s solution.
 
-![b](https://user-images.githubusercontent.com/83190503/121784425-d2b73400-cbab-11eb-837f-22d1439ece6c.png)
+![untitled](https://user-images.githubusercontent.com/83190503/121893518-f3030200-cd15-11eb-9dcc-5f3a703e4e1e.png)
+
