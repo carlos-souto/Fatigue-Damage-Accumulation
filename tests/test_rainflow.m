@@ -5,11 +5,7 @@ clear all; close all; clc;
 addpath([pwd, '\..\source\']);
 
 % number of tests per run
-n = 25;
-
-% timers
-matlab_elapsed = 0;
-custom_elapsed = 0;
+n = 50;
 
 % history size for each run
 history_size = 100:1000:100000;
@@ -22,6 +18,10 @@ y_custom = zeros(length(history_size), 1);
 for k = 1:1:length(history_size)
     
     fprintf('Run %i of %i (data array size = %i)...\n', k, length(history_size), history_size(k));
+    
+    % timers
+    matlab_elapsed = 0;
+    custom_elapsed = 0;
     
     % test loop
     for i = 1:1:n
