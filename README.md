@@ -1,5 +1,11 @@
 # Fatigue-Damage-Accumulation
-### By C. Souto (csouto@fe.up.pt)
+By C. Souto (csouto@fe.up.pt)
+
+### If you use this work, please cite the following reference
+
+*C. Souto, J. Correia, A. de Jesus, R. Calçada, Fatigue Damage Tool (FDT) - A tool for fatigue damage assessment according to design codes, Procedia Structural Integrity 22 (2019) 376-385. [doi:10.1016/j.prostr.2020.01.047](https://www.doi.org/10.1016/j.prostr.2020.01.047).*
+
+### Description
 
 Fatigue damage accumulation for variable amplitude stress-time histories using the Palmgren-Miner rule coded in Matlab. Code is documented and easy to use.
 The design fatigue strength curve (S-N or stress-life curve) is specified using the standardized parameters from Eurocode 3 EN 1993-1-9. The cycle counts are done using a rainflow counting algorithm based on ASTM E1049-85.
